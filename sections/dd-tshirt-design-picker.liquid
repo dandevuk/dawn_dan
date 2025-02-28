@@ -1,0 +1,27 @@
+<div class="page-width">
+  <h2 class="h1">{{ section.settings.title }}</h2>
+</div>
+
+{% schema %}
+{
+  "name": "DD Random T-Shirt Picker",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Random T-Shirt Picker"
+    },
+    {
+      "type": "collection",
+      "id": "tshirt_collection",
+      "label": "T-Shirt Collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "DD Random T-Shirt Picker"
+    }
+  ]
+}
+{% endschema %}
